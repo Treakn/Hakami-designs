@@ -302,6 +302,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
     width: 96%;
     max-width: 33.22222222em;
   }
+  #cta .container .button-solid {
+    background-color: var(--light);
+}
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {

@@ -46,6 +46,12 @@
   #sidebyside .content h2 {
     font-size: 3em;
     margin-bottom: 0.875em;
+    padding: 10px;
+  }
+  #sidebyside .content .name{
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #000;
   }
   #sidebyside .content p {
     margin-bottom: 1.11111111em;
@@ -123,6 +129,7 @@
   }
   #sidebyside .container .content img{
     width: 300px;
+    transform: translateY(5px);
   }
 }
 /* Inbetween */

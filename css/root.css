@@ -304,7 +304,7 @@
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
-    top: 4em;
+    top: 6em;
     padding-top: 0;
     height: 0;
     -webkit-transition: height 0.3s, padding-top 0.3s, top 0.3s;
@@ -328,6 +328,10 @@
     transition: opacity .5s, -webkit-transform .5s;
     transition: opacity .5s, transform .5s;
     transition: opacity .5s, transform .5s, -webkit-transform .5s;
+  }
+  body.dark-mode #navigation #navbar-menu ul {
+    margin-top: 10px;
+    
   }
   #navigation #navbar-menu ul li:nth-of-type(1) {
     -webkit-transition-delay: .1s;
@@ -373,7 +377,7 @@
     z-index: -1;
   }
   #navigation #navbar-menu.open {
-    height: 19.125em;
+    height: 23.125em;
     padding-top: 1.25em;
     z-index: -100;
   }
@@ -546,7 +550,7 @@
 /* Dark Mode Mobile */
 @media only screen and (max-width: 1023px) {
   body.dark-mode #navigation .background-color-div {
-    background-color: transparent
+    background-color: var(--accent);
   }
   body.dark-mode #navigation .hamburger-menu.clicked span {
     background-color: transparent;
@@ -584,7 +588,7 @@
 /* Dark Mode Desktop */
 @media only screen and (min-width: 1024px) {
   body.dark-mode #navigation .background-color-div {
-    background-color: transparent;
+    background-color: var(--accent);
   }
   body.dark-mode #navigation .logo .light {
     display: block;

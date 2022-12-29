@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+    <!--Favicons-->
+    <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/images/landing-m.webp">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/critical.css"> <!-- Only above the fold css-->
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <!--Defer loading the whole page css-->
+    <link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+
+    <!--If the user has javascript disbaled, load this stylesheet-->
+    <noscript>
+        <link rel="stylesheet" href="/css/local.css">
+    </noscript>
+
+    <title>Hakami designs| build websites</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <div id="navigation">
+        <div aria-hidden="true" class="background-color-div">
+            <!--This div is used to overcome a z-index issue where the open
+                #navbar-menu is on top of the #navigation. This bar places itself 
+                the #navbar-menu so that menu appears behind the #navigation
+            -->
+        </div>
+        <div class="container ">
+            
+            <a class="logo" aria-label="click to go to home page" href="/index.html">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="/images/dark-logo.png" decoding="async" alt="logo" width="221" height="66">
+
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="/images/light-logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+                <span class="neon neon1">في</span>
+                <span class="neon">الليل</span>
+            </a>
+
+               
+            </a>
+            
+
+            <!--Main Nav-->
+            <nav id="navbar-menu">
+                <ul>
+                    <li><a class="active" href="/index.html">الرئيسية</a></li>
+                    <li><a href="/about.html">عننا</a></li>
+                    <li><a href="/Pricing.html">أسعارنا</a></li>
+                    <li><a href="/contact.html">تواصل معنا</a></li>
+                    
+                </ul>
+                
+            </nav>
+
+            <!--Dark Mode toggle-->
+            <button id="dark-mode-toggle">
+                <!--Moon is an inline SVG so you can edit the color if needed-->
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+
+            <!--Mobile Nav toggle-->
+            <button class="hamburger-menu">
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="hero">
+            <img aria-hidden="true" class="effect aircraft" src="/images/aircraft.svg" alt="">
+            <img aria-hidden="true" class="effect ufo" src="/images/ufo-spaceship.svg" alt="">
+            <img aria-hidden="true" class="effect ufo2" src="/images/ufo-spaceship.svg" alt="">
+            <span class="star star-1"></span>
+            <span class="star star-2"></span>
+            <span class="star star-3"></span>
+            <span class="star star-4"></span>
+            <span class="star star-5"></span>
+            <span class="star star-6"></span>
+            <span class="star star-7"></span>
+            <span class="star star-8"></span>
+            <span class="star star-9"></span>
+            <span class="star star-10"></span>
+            <span class="star star-11"></span>
+            <span class="star star-12"></span>
+            <span class="star star-13"></span>
+            <span class="star star-14"></span>
+            <span class="star star-15"></span>
+            <div class="hero-content">
+                <div class="heroText">
+                    <h1 id="home-h">نبني تجارب رائعة</h1>
+                    <p>
+                        بناء مواقع باليد دون استخدام قوالب او اي ما شابه 
+                        نحن نبني بهويتك التجارية  بأعلى المعاير و تجسيم
+                    </p>
+                    <a class="button-solid" href="/contact.html" target="_blank" rel="noopener">
+                        احصل على موقعك الأن
+                    </a>
+                </div>
+            </div>
+
+            <img aria-hidden="true" class="swoop dark-swoop " src="/images/Wave-dark.svg" alt="web development">
+            <img aria-hidden="true" class="swoop light-swoop " src="/images/Wave light.svg" alt="web development">
+           
+        </section>
+
+         <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+        <section id="services" class="services">
+            <div class="services-container container">
+                <img aria-hidden="true" class="blob dark-blob " src="images/Blob dark.svg" alt="web development">
+                <img aria-hidden="true" class="blob light-blob " src="images/Animated Shape.svg" alt="web development">
+                <div class="content">
+                <h2><span class="color-span">مين</span> حنا</h2>
+                <span class="line"></span>
+                <p>نتخصص في بناء المواقع للمؤسسات و المنشأت في اي مكان و نكتب الكود يدويا 100% بدون استخدام اي قوالب شغلنا خصيصا للعميل بحيث تركيزنا على احتياجاته لتوليد له ارباح افضل</p>
+            </div>
+            <div class="what-wrapper container">
+                <div class="content">
+                    <div class="what-item">
+                        <img src="/images/smartphone.svg" aria-hidden="true" height="512pt" viewBox="-11 0 512 512.001" width="512pt">
+                        <h3>من الجوال اولا</h3>
+                        <p>بناء الموقع من الجوال اولا من ثم نظيف الشاشات الأكبر</p>
+                        
+                    </div>
+                    <div class="what-item">
+                        <img src="/images/seo.svg" aria-hidden="true" height="512pt" viewBox="-11 0 512 512.001" width="512pt">
+                        <h3>تحسين اداء محركات البحث</h3>
+                        <p>بناء الموقع من الجوال اولا من ثم نظيف الشاشات الأكبر</p>
+                    </div>
+                    <div class="what-item">
+                        <img src="/images/coding.svg" aria-hidden="true" height="512pt" viewBox="-11 0 512 512.001" width="512pt">
+                        <h3>اداء ممتاز</h3>
+                        <p>بناء الموقع من الجوال اولا من ثم نظيف الشاشات الأكبر</p></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        
+       
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside" class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">تصير واحد منا</h2>
+                     <p>تصميمك و بناء موقعك علينا ما يحتاج تدفع اول</p>
+                     <p>
+                         <strong>اترك الموضوع علينا</strong>
+                      </p>
+                     <ul>
+                        <li>
+                            <span>تصميم إحترافي يركز على تجربة العميل</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="25" height="25">
+                        </li>
+                        <li>
+                            <span>تصميم يحول زوارك لعملائك</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="25" height="25">
+                        </li>
+                        <li>
+                            <span>رفع تقايم موقعك بإستخدام احدث طرق تحسين عمليات البحث(SEO)</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="25" height="25">
+                        </li>
+                        <li>
+                            <span>كاتب محتوى احترافي يكتب محتوى صفحاتك بكلمات مفتاحية دقيقة و مدروسة</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="25" height="25">
+                        </li>
+                        <li>
+                            <span>تصميم إحترافي يركز على تجربة العميل</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="25" height="25">
+                        </li>
+                    </ul>
+                     <p>
+                        محترفين في مجالنا و مشاريعنا تتكلم عن نفسها <br>
+                        بأسعار جدا معقولة
+                     </p>
+                     <a class="button-solid" href="/about.html">أسعارنا</a>
+                </div>
+               
+            </div>
+       </section>
+
+        <!-- ============================================ -->
+        <!--          Extra Content For Ranking           -->
+        <!-- ============================================ -->
+
+        <section id="sidebyside-reverse">
+            <div class="container">
+                <img aria-hidden="true" class="saving" src="images/savings.svg" alt="affordable web development">
+                <div class="content">
+                    <h2 class="title"> مطورينك , مصممين لك , كاتبين محتوى , محترفين تحسين عمليات البحث في خدمتك</h2>
+                     <p>
+                        لك الضمان الذهبي لعيونك
+                        خلنا نصمملك الموقع و لو ما عجبك ما عليك شي, لو ما عجبك نغيره و لو ما عجبك اكثر نغيره لين يهجبك <br> 
+                     </p>
+                     <p>
+                         <strong>كيف تضمن <span class="golden">حقك</span></strong>
+                      </p>
+                     <ul>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <span>لا تدفع لين يعجبك</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <span>لو ما حققت اهدافك نعيد هيكلة الموقع</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <span>نبنيه بدون اي دفعة اولى</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <span>لك تغيرات الي تبيها جتى بعد اطلاق الموقع</span>
+                        </li>
+                        <li>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <span>نستهدف جمهورك</span>
+                        </li>
+                    </ul>
+                     <p>
+                         ضمانك الذهبي يضمنلك كل شي تبيه ما راح تخسر شي اذا جربت 
+                     </p>
+                     <a class="button-solid" href="/contact.html">اسعارنا</a>
+                </div>
+            </div>
+            <img aria-hidden="true" class="spikes" src="images/Rect Light.svg" alt="web development">
+       </section>
+
+        <!-- ============================================ -->
+        <!--             Final Call to Action             -->
+        <!-- ============================================ -->
+
+        <section id="cta">
+            <div class="container">
+                <h2 class="title">اترك موضوع الموقع علينا<br>و ريح بالك</h2>
+                <p>
+                    مطور مواقع الخاص فيك وش ما بغيت موجود لك <br> 
+                    لا تتردد و تواصل معنا الحين
+                </p>
+                <a href="/contact.html" class="button-solid">احصل على تسعيرتك الأن</a>
+            </div>
+            <img aria-hidden="true" class="spikes curve" src="images/Curve Line.svg" alt="web development">
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="left-section">
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/dark-logo.png" alt="logo" width="264" height="78"></a>
+               
+            </div>
+            <div class="right-section">
+                <div class="lists">
+                    <ul>
+                        <li><h2>معلومات</h2></li>
+                        <li><a href="/index.html">الرئيسية</a></li>
+                        <li><a href="/about.html">عننا</a></li>
+                        <li><a href="/Pricing.html">أسعارنا</a></li>
+                        <li><a href="/contact.html">تواصل معنا</a></li>
+                        
+                    </ul>
+                    <ul>
+                        <li><h2>خدماتنا</h2></li>
+                        <li>تصميم الموقع</li>
+                        <li>تطوير المواقع</li>
+                        <li>كتابة المحتوى</li>
+                        <li>خدمة تحسيت محركات البحث</li>
+                    </ul>
+                    <ul>
+                        <li><h2>تواصل</h2></li>
+                        <li><a href="tel:555-487-151">هاتف :0555487151</a></li>
+                        <li><a href="mailto:al7kmi2030@gmail.com">اضغط هنا للبريد الألكتروني</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <span>Designed and Hand Coded by</span>
+            <a href="" target="_blank" rel="noopener">Hakami's designs</a>
+            <span class="copyright"> Copyright 2022 - Present</span></div>
+    </footer>
+
+
+    <script defer src="/nav.js"></script>
+    <script defer src="/dark.js"></script>
+    <script defer>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

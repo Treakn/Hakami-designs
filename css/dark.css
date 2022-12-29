@@ -1,0 +1,198 @@
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  :root {
+    --dark: #3D3D3D;
+    --medium: #2C394B;
+    --accent: #334756;
+  }
+  body.dark-mode {
+    background-color: var(--dark);
+  }
+  body.dark-mode .dark-swoop{
+    display: block;
+  }
+  body.dark-mode .light-swoop{
+    display: none;
+  }
+  body.dark-mode .aircraft{
+    display: block;
+    opacity: 1;
+  }
+  body.dark-mode .effect{
+    display: block;
+  }
+  body.dark-mode .button-solid {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    background-color: transparent;
+    color: var(--primary);
+    border: #2287d575 1px solid ;
+    box-shadow: 0px 0px 3px 3px;
+    -webkit-animation: btns 1s both infinite;
+    animation: btns 2s both infinite;
+  }
+
+  body.dark-mode #hero .button-solid {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    background-color: transparent;
+    color: var(--primary);
+    border: #2287d575 1px solid ;
+    box-shadow: 0px 0px 3px 3px;
+    -webkit-animation: btns 1s both infinite;
+    animation: btns 2s both infinite;
+  }
+  
+  @keyframes btns {
+    0% {
+      border-color: #43b7ff;
+      -webkit-box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+      box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+  }
+  15% {
+      border-color: #56beff;
+      -webkit-box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+      box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+  }
+  16% {
+      border-color: transparent;
+      -webkit-box-shadow: 0 0 20px transparent, inset 0 0 10px transparent, 0 2px 0 transparent;
+      box-shadow: 0 0 20px transparent, inset 0 0 10px transparent, 0 2px 0 transparent;
+  }
+  17% {
+      border-color: #43b7ff;
+      -webkit-box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+      box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+  }
+  20% {
+      border-color: #56beff;
+      -webkit-box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+      box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+  }
+  30% {
+      border-color: #43b7ff;
+      -webkit-box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+      box-shadow: 0 0 5px rgb(67 183 255 / 20%), inset 0 0 5px rgb(67 183 255 / 10%), 0 2px 0 #000;
+  }
+  100% {
+      border-color: #56beff;
+      -webkit-box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+      box-shadow: 0 0 10px rgb(67 183 255 / 60%), inset 0 0 10px rgb(67 183 255 / 40%), 0 2px 0 #000;
+  }
+
+  }
+  body.dark-mode p,
+  body.dark-mode li,
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode h5,
+  body.dark-mode h6 {
+    color: #fff;
+  }
+  body.dark-mode #hero{
+    background: hsla(232, 43%, 14%, 1);
+
+background: linear-gradient(90deg, hsla(232, 43%, 14%, 1) 0%, hsla(235, 76%, 12%, 1) 98%);
+
+background: -moz-linear-gradient(90deg, hsla(232, 43%, 14%, 1) 0%, hsla(235, 76%, 12%, 1) 98%);
+
+background: -webkit-linear-gradient(90deg, hsla(232, 43%, 14%, 1) 0%, hsla(235, 76%, 12%, 1) 98%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#141832", endColorstr="#070B34", GradientType=1 );
+  }
+  body.dark-mode .neon{
+    display: inline;
+  }
+  body.dark-mode #services .container .content .what-item{
+    background-color: var(--medium);
+  }
+  body.dark-mode #hero{
+    color: #fff;
+  }
+  body.dark-mode .star{
+    display: inline-block;
+  }
+  body.dark-mode .light {
+    display: none;
+  }
+  body.dark-mode .dark {
+    display: block !important;
+  }
+  .dark {
+    display: none;
+  }
+  body.dark-mode .nav-btn{
+    color: #fff;
+  }
+}
+/*-- -------------------------- -->
+<---      Dark Mode Toggle      -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #dark-mode-toggle .sun {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  body.dark-mode #dark-mode-toggle .moon {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+  #dark-mode-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.75em;
+    width: 3em;
+    height: 3em;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+  }
+  #dark-mode-toggle img,
+  #dark-mode-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5625em;
+    height: 1.5625em;
+    pointer-events: none;
+  }
+  #dark-mode-toggle .moon {
+    z-index: 2;
+    transition: transform .3s, opacity .3s, fill .3s;
+    fill: #000;
+  }
+  #dark-mode-toggle .sun {
+    z-index: 1;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 64em) {
+  #dark-mode-toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-left: 1.875em;
+    margin-bottom: 0em;
+    border-radius: 50%;
+    padding: 1.1875em
+  }
+  #dark-mode-toggle .moon {
+    fill: #fff;
+  }
+}

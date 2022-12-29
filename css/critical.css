@@ -1,0 +1,419 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #hero {
+    font-size: inherit;
+    padding-bottom: 16.875em;
+    padding-top: 9.375em;
+    position: relative;
+    z-index: 4000;
+    background-color: var(--primary);
+  }
+  .nav-btn{
+    padding: 10px 25px;
+    background-color: transparent;
+    border-radius: 30px;
+    margin-left: auto;
+    font-size: 1.1875em;
+    border: 1px var(--medium) solid;
+  }
+  .dark-swoop{
+    display: none;
+  }
+  .light-swoop{
+    display: block;
+  }
+  .effect{
+    display: none;
+  }
+  .ufo{
+    position: absolute;
+    width: 1.1875em;
+    top: 30%;
+    -webkit-animation: ufo 30s both infinite;
+    animation: ufo 30s both infinite;
+  }
+  .ufo2{
+    position: absolute;
+    width: 1.1875em;
+    top: 15%;
+    -webkit-animation: ufo 50s both infinite;
+    animation: ufo2 50s both infinite;
+  }
+  a{
+    text-decoration: none;
+  }
+  .neon{
+    display: none;
+    visibility: none;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 2em;
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0;
+    -webkit-animation: neonglow 3s linear infinite;
+    animation: neonglow 3s linear infinite;
+  }
+  .neon1{
+    animation-delay: 2s;
+  }
+  @keyframes neonglow {
+    0%, 100% {
+      color: #abe1fe;
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      text-shadow: 0 0 10px #43b7ff, 0 0 20px #43b7ff, 0 0 40px #43b7ff, 0 0 50px #43b7ff, 0 0 60px #43b7ff;
+  }
+  5%, 95% {
+    color: #fff;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    text-shadow: none,;
+}
+}
+
+  @keyframes ufo {
+    0% {
+      transform: translateX(-9000px);
+    }
+    
+    100% {
+      transform: translateX(9000px);
+    }
+  }
+  @keyframes ufo2 {
+    0% {
+      transform: translateX(9000px);
+    }
+    
+    100% {
+      transform: translateX(-9000px);
+    }
+  }
+  @keyframes blink-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes hover {
+    0% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }
+  .star{
+    display: none;
+    border-radius: 50%;
+    background-color: silver;
+    box-shadow: 0px 0px 0px .5px;
+    -webkit-animation: blink-2 both infinite;
+	        animation: blink-2 both infinite ;
+  }
+  .star-1{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    animation-duration: 6s;
+      }
+  .star-2{
+    position: absolute;
+    top: 30%;
+    right: 80%;
+    animation-duration: 9s;
+  }
+  .star-3{
+    position: absolute;
+    top: 10%;
+    right: 37%;
+    animation-duration: 12s;
+  }
+  .star-4{
+    position: absolute;
+    top: 10%;
+    right: 74%;
+    animation-duration: 7s;
+      }
+  .star-5{
+    position: absolute;
+    top: 32%;
+    right: 45%;
+    animation-duration: 10s;
+      }
+  .star-6{
+    position: absolute;
+    top: 20%;
+    right: 28%;
+    animation-duration: 21s;
+  }
+  .star-7{
+    position: absolute;
+    top: 10%;
+    right: 37%;
+    animation-duration: 5s;
+  }
+  .star-8{
+    position: absolute;
+    top: 37%;
+    right: 64%;
+    animation-duration: 10s;
+  }
+  .star-9{
+    position: absolute;
+    top: 23%;
+    right: 74%;
+    animation-duration: 18s;
+  }
+  .star-10{
+    position: absolute;
+    top: 19%;
+    right: 55%;
+    animation-duration: 7s;
+  }
+  .star-11{
+    position: absolute;
+    top: 40%;
+    right: 54%;
+    animation-duration: 14s;
+      }
+  .star-12{
+    position: absolute;
+    top: 42%;
+    right: 82%;
+    animation-duration: 5s;
+      }
+  .star-13{
+    position: absolute;
+    top: 29%;
+    right: 41%;
+    animation-duration: 6s;
+      }
+  .star-14{
+    position: absolute;
+    top: 57%;
+    right: 43%;
+    animation-duration: 8s;
+      }
+  .star-15{
+    position: absolute;
+    top: 31%;
+    right: 59%;
+    animation-duration: 9s;
+  }
+  .aircraft{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 5em;
+    top: 20%;
+    left:20%;
+    -webkit-animation: hover 4s ease-in-out infinite;
+	        animation: hover 4s ease-in-out infinite ;
+  }
+  .swoop{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    transform: translateY(10px);
+  }
+  .high{
+    font-weight: 900;
+    font-size: 24px;
+    color: red;
+  }
+  #hero picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -11;
+  }
+  #hero picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #hero .hero-content {
+    width: 96%;
+    max-width: 71.5em;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  #hero .hero-content {
+    padding: 0;
+  }
+  #hero .heroText {
+    width: 100%;
+    margin: auto;
+    max-width: 56.875em;
+  }
+  #hero h1 {
+    font-weight: bold;
+    font-size: min(12vw, 4em);
+    text-align: center;
+    line-height: 1.203125;
+    margin: auto;
+    width: 100%;
+    max-width: 14.125em;
+    margin-bottom: 1.4375em;
+    position: relative;
+  }
+  
+  #hero p {
+    line-height: 1.55em;
+    margin: auto;
+    margin-bottom: 1.72222222em;
+    width: 100%;
+    text-align: center;
+    max-width: 34.27777778em;
+    opacity: 1;
+  }
+  #hero .button-solid {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    background-color: var(--light);
+
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #hero {
+    padding: 12.5em 0 18.75em 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  #hero .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+ 
+  #hero picture {
+    display: none;
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #services{
+    position: relative;
+    z-index: 1;
+  }
+  #services .container .blob{
+    position: absolute;
+    height: 33vh;
+    z-index: -1;
+    
+  }
+  #services .container .dark-blob{
+    display: none;
+  }
+  #services .container .content{
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .line{
+    display: inline-block;
+    width: 5em;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    margin: 30px;
+  }
+  
+  #services .container .content h2{
+    font-size: 3em;
+  }
+  #services .container .content p{
+    max-width: 900px;
+    text-align: center;
+  }
+  #services .services-container .what-wrapper .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  #services .container .content .what-item{
+    width: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.94);
+    border-radius: 8px;
+    padding: 30px;
+  }
+  #services .container .content .what-item img{
+    width: 5em;
+    height: 15%;
+    margin: 1em 0;
+  }
+  
+}
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+  #services .container .what-wrapper .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  #services .container .blob{
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  
+}
+/* Dark mode */
+@media only screen and (min-width: 0em) {
+  
+  
+  
+  body.dark-mode #services h2 {
+    color: #fff;
+    font-weight: bold;
+  }
+}

@@ -216,7 +216,7 @@
   #navigation .logo .dark {
     display: block;
     height: 100%;
-    width: 120px;
+    width: 115px;
   }
   #navigation .hamburger-menu {
     position: absolute;
@@ -418,8 +418,7 @@
   body.scroll #navigation .logo .dark {
     display: block;
     height: 100%;
-    width: 230px;
-  }
+    width: 100%;  }
   body.scroll #navigation #navbar-menu ul li a {
     color: #1a1a1a;
   }
@@ -563,7 +562,7 @@
   body.dark-mode #navigation .logo .light {
     display: block;
     height: 100%;
-    width: 120px;
+    width: 115px;
   }
   body.dark-mode #navigation .logo .dark {
     display: none !important;
@@ -860,7 +859,7 @@
   #navigation .logo img {
     width: auto;
     height: 100%;
-    width: 230px;
+    width: 100%;
   }
   #footer {
     font-size: min(1.2vw, 1em);

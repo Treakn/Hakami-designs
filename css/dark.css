@@ -4,7 +4,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --dark: #3D3D3D;
+    --dark: #171716;
     --medium: #2C394B;
     --accent: #334756;
   }

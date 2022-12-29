@@ -23,7 +23,7 @@
     color: #1A1A1A;
     position: relative;
     margin-bottom: 0.875em;
-    text-align: left;
+    text-align: right;
   }
   #form p {
     line-height: 1.5;
@@ -36,6 +36,7 @@
     margin: auto;
     margin-top: 15%;
     max-width: 37.5em;
+    text-align: right;
   }
   #form #contact {
     margin: auto;
@@ -66,6 +67,7 @@
     border: none;
     border-bottom: 0.0625em solid #d4d4d4;
     background: transparent;
+    text-align: right;
   }
   #form #contact .input-group input:focus {
     border: 0.0625em solid var(--primary);
@@ -100,6 +102,7 @@
     max-width: 18.75em;
     margin: auto;
     border-radius: 0.3125em;
+    text-align: right;
   }
   #form .contact-right .heading {
     color: #fff;
@@ -124,6 +127,9 @@
     opacity: .9;
     text-decoration: none;
     display: block;
+  }
+  body.dark-mode #form .form-submit button{
+    background-color: var(--light);
   }
 }
 /* Mobile Landscape */

@@ -6,6 +6,7 @@
   
   #sidebyside {
     padding: 50px 0;
+   
   }
   #sidebyside .container {
     display: flex;
@@ -28,6 +29,7 @@
   #sidebyside .content p {
     margin-bottom: 1.11111111em;
   }
+  
   #sidebyside .content ul {
     padding-left: 1.25em;
     margin-bottom: 1.25em;
@@ -46,59 +48,73 @@
   #sidebyside .content .button-solid {
     margin-top: 1.78571429em;
   }
-  #sidebyside .image-box {
-    display: block;
-    position: relative;
-    margin: auto;
-    width: 38.1875em;
-    height: 53.8125em;
-    font-size: min(1.4vw, 1em);
+  
+  
+  
+  #sidebyside .container .content .service-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    margin-top: 100px;
+}
+  
+  #sidebyside .container .content .service-wrapper .service{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 270px;
+    text-align: right;
   }
-  #sidebyside .image-box:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: var(--primary);
-    opacity: 1;
-    top: 2.5em;
-    left: -2.5em;
+  #sidebyside .container .content .service-wrapper .service h3 {
+    margin: 10px 0;
+    font-family: 'bold';
+    font-size: 1.4em;
   }
-  #sidebyside .image-box:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 32.25em;
-    width: 28.75em;
-    background: url("/images/content-circles.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    top: -14.125em;
-    right: -6.8125em;
-    z-index: -1;
+  #sidebyside .container .content .service-wrapper .service h3 img{
+    margin-left: 0.625em;
+    margin-top: 0.22222222em;
   }
-  #sidebyside .image-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  #sidebyside .container .content .service-wrapper .service p{
+    line-height: 45px;
   }
+  .services-last{
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
 }
 /* Inbetween */
+@media (min-width:587px) {
+  #sidebyside .container .content .service-wrapper{
+    justify-content: space-between;
+  }
+}
 @media only screen and (min-width: 666px) {
   #sidebyside {
     padding: 6.25em 0;
   }
+  
 }
 /* Small Desktop */
 @media only screen and (min-width: 1300px) {
   #sidebyside {
-    padding: 9.375em 0;
+    padding: 1.375em 0;
   }
   #sidebyside .container {
     max-width: 86.9375em;
@@ -112,6 +128,11 @@
   #sidebyside .image-box {
     margin: 0;
     margin-right: 10.625em;
+  }
+  @media only screen and (min-width:2320px) {
+    #sidebyside .container .content .service-wrapper .service{
+      width: 360px;
+    }
   }
 }
 /*-- -------------------------- -->
@@ -141,14 +162,9 @@
     margin-bottom: 0.875em;
   }
 
-  .golden{
-    font-family: 'bold';
-    color: #2287D5;
-    font-weight: 900;
-  }
   #sidebyside-reverse .container .saving{
     width: 50vw;
-    height: 30%;git 
+    height: 30%; 
   }
   #sidebyside-reverse .content p {
     margin-bottom: 1.11111111em;
@@ -160,11 +176,12 @@
   #sidebyside-reverse .content ul li {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
+    margin: 10px;
   }
   #sidebyside-reverse .content ul li img {
-    margin-right: 0.625em;
+    margin-left: 0.625em;
     margin-top: 0.22222222em;
   }
   #sidebyside-reverse .content .button-solid {
@@ -189,29 +206,8 @@
     top: 2.5em;
     left: -2.5em;
   }
-  #sidebyside-reverse .image-box:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 32.25em;
-    width: 28.75em;
-    background: url("/images/content-circles.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    top: -14.125em;
-    right: -6.8125em;
-    z-index: -1;
-  }
-  #sidebyside-reverse .image-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+  
+ 
 }
 /* Inbetween */
 @media only screen and (min-width: 666px) {
@@ -235,19 +231,7 @@
     width: 60%;
     order: 1;
   }
-  #sidebyside-reverse .image-box {
-    margin: 0;
-    margin-left: 10.625em;
-    order: 2;
-  }
-  #sidebyside-reverse .image-box:before {
-    left: auto;
-    right: -2.5em;
-  }
-  #sidebyside-reverse .image-box:after {
-    right: auto;
-    left: -6.8125em;
-  }
+  
   
 }
 /*-- -------------------------- -->

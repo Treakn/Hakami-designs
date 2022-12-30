@@ -104,12 +104,17 @@
     padding: 30px;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: right;
-    gap: 30px;
+    gap: 40px;
     box-shadow: 1px 5px 5px 1px;
+    width: 80vw;
+  }
+  #pricing .container .pricing-wrapper .pricing-top{
+    text-align: center;
   }
   
   body.dark-mode #pricing {
@@ -136,13 +141,19 @@
     color: var(--dark);
     list-style: none;
   }
-  
+  #pricing .container .pricing-wrapper .pricing-card ul li{
+    margin: 15px;
+    border-bottom: #2287d55e solid 1px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
   
   #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
     background-image: radial-gradient(circle at 100% 100%, transparent 4px, #d5d5d7 4px, #d5d5d7 6px, transparent 6px), linear-gradient(to right, #d5d5d7, #eaeaeb), radial-gradient(circle at 0% 100%, transparent 4px, #eaeaeb 4px, #eaeaeb 6px, transparent 6px), linear-gradient(to bottom, #eaeaeb, #d5d5d7), radial-gradient(circle at 0% 0%, transparent 4px, #d5d5d7 4px, #d5d5d7 6px, transparent 6px), linear-gradient(to left, #d5d5d7, #eaeaeb), radial-gradient(circle at 100% 0%, transparent 4px, #eaeaeb 4px, #eaeaeb 6px, transparent 6px), linear-gradient(to top, #eaeaeb, #d5d5d7);
     background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
+    height: 95em;
   }
   #pricing .container .pricing-wrapper .pricing-card:nth-child(1) .button-solid{
     background: hsla(240, 2%, 84%, 1);
@@ -158,12 +169,29 @@
     #pricing .container .pricing-wrapper .pricing-card:nth-child(1) p, #pricing .container .pricing-wrapper .pricing-card:nth-child(1) .button-solid , #pricing .container .pricing-wrapper .pricing-card:nth-child(1) ul li{
     color: #000;
   }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1) h2{
+    background: #000000;
+    background: linear-gradient(to left, #000000 0%, #C0C0C0 85%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    padding-bottom: 20px;
+    border-bottom: #000 solid 1px;
+  }
+
   #pricing .container .pricing-wrapper .pricing-card:nth-child(2) , #pricing .container .pricing-wrapper .pricing-card:nth-child(2) .button-solid{
     background-image: radial-gradient(circle at 100% 100%, transparent 4px, #daa520 4px, #daa520 6px, transparent 6px), linear-gradient(to right, #daa520, #fafad2), radial-gradient(circle at 0% 100%, transparent 4px, #fafad2 4px, #fafad2 6px, transparent 6px), linear-gradient(to bottom, #fafad2, #daa520), radial-gradient(circle at 0% 0%, transparent 4px, #daa520 4px, #daa520 6px, transparent 6px), linear-gradient(to left, #daa520, #fafad2), radial-gradient(circle at 100% 0%, transparent 4px, #fafad2 4px, #fafad2 6px, transparent 6px), linear-gradient(to top, #fafad2, #daa520);
     background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
     color: var(--dark);
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2) h2{
+    background: #FAFAD1;
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #FAFAD1 0%, #D9A520 50%, #D9A520 51%, #FAFAD1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+    border-bottom: #000 solid 1px;
   }
   #pricing .container .pricing-wrapper .pricing-card:nth-child(2) .button-solid{
     background: hsla(43, 74%, 49%, 1);
@@ -201,6 +229,14 @@ background: -webkit-linear-gradient(45deg, hsla(206, 75%, 80%, 1) 0%, hsla(206, 
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", endColorstr="#2287D5", GradientType=1 );
   }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(3) h2{
+    background: #2286d3;
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #2286d3 0%, #A6D1F2 50%, #A6D1F2 51%, #2286D3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+    border-bottom: #000 solid 1px;
+  }
   
   #cta {
     content: '';
@@ -222,11 +258,28 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
   
 }
 /* Small Desktop */
+@media only screen and (min-width: 700px){
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
+    height: 52em;
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2){
+   height: 71em;
+  }
+}
+@media only screen and (min-width: 1024px){
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
+    height: 36em;
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2){
+    height: 47em;
+   }
+}
+
 @media only screen and (min-width: 700px) {
-  #pricing .container .pricing-wrapper{
+#pricing .container .pricing-wrapper{
     flex-direction: row;
   }
-  #pricing .container .pricing-wrapper .pricing-card ul li {
+#pricing .container .pricing-wrapper .pricing-card ul li {
     font-size: .7em;
 }
 #pricing .container .pricing-wrapper .pricing-card h2{
@@ -236,7 +289,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
 #pricing .container .pricing-wrapper .pricing-card .button-solid{
   font-size: .7em;
 }
+#pricing .container .pricing-wrapper .pricing-card{
+  width: 30vw;
 }
+}
+@media only screen and (min-width: 1024px){
+ 
+  }
+  @media only screen and (min-width: 1400px){
+   
+    }
 @media only screen and (min-width: 64em) {
   #pricing {
     padding: 9.375em 0;
@@ -247,11 +309,24 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
   #pricing .container .pricing-wrapper .pricing-card h2, #pricing .container .pricing-wrapper .pricing-card p{
     font-size: 1em;
   }
+  #pricing .container .pricing-wrapper .pricing-card .pricing-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   #pricing .container .pricing-wrapper .pricing-card .button-solid{
     font-size: .5em;
   }
   #pricing .container .pricing-wrapper .pricing-card ul li{
-    font-size: .5em;
+    font-size: .57em;
+    max-width: 200px;
+    margin: 15px;
+    border-bottom: #2287d55e solid 1px;
+    padding-bottom: 10px;
+  }
+  .color{
+    color: var(--primaryShade);
   }
 }
 /*-- -------------------------- -->

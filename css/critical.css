@@ -9,7 +9,8 @@
     padding-top: 9.375em;
     position: relative;
     z-index: 4000;
-    background-color: var(--primary);
+    background: rgb(34,135,213);
+    background: linear-gradient(49deg, rgba(34,135,213,1) 5%, rgba(34,135,213,1) 60%, rgba(20,71,196,1) 100%);
   }
   .nav-btn{
     padding: 10px 25px;
@@ -277,6 +278,7 @@
     max-width: 14.125em;
     margin-bottom: 1.4375em;
     position: relative;
+    color: var(--light);
   }
   
   #hero p {
@@ -287,6 +289,7 @@
     text-align: center;
     max-width: 34.27777778em;
     opacity: 1;
+    color: var(--light);
   }
   #hero .button-solid {
     margin: auto;
@@ -385,6 +388,7 @@
     margin: 1em 0;
   }
   
+  
 }
 /* Inbetween */
 @media only screen and (min-width: 768px) {
@@ -394,7 +398,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 1rem;
   }
   #services .container .blob{
     position: absolute;

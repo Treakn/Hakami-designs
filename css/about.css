@@ -192,13 +192,13 @@
     font-weight: 900;
     font-size: min(9vw, 3em);
     line-height: 1.20833333;
-    
+    color: var(--light);
     position: relative;
     margin-bottom: 0.75em;
     text-align: center;
   }
   #cta p {
-   
+    color: var(--light);
     text-align: center;
     opacity: 1;
     margin: auto;

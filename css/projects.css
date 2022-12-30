@@ -129,6 +129,11 @@
     border: none;
     font-family: 'bold';
   }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid:hover a{
+    color: var(--light);
+    transition: all .4s;
+  }
+ 
   #pricing .container .pricing-wrapper .pricing-card h2{
     font-size: 3em;
     color: var(--primary);
@@ -143,6 +148,7 @@
   }
   #pricing .container .pricing-wrapper .pricing-card .button-solid a{
     text-decoration: none;
+    font-size: 1em;
     color: var(--dark);
   }
   #pricing .container .pricing-wrapper .pricing-card ul li{
@@ -390,6 +396,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
   #cta {
     padding: 10.5em 0;
   }
+  
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {

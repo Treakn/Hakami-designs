@@ -137,13 +137,13 @@
   }
   #form #contact .input-group:nth-of-type(6) select#packages{
     font-size: 20px;
-    color: #fff;
+    color: var(--dark);
     border-radius: 8px;
     text-align: right;
   }
   body.dark-mode #form #contact .input-group:nth-of-type(6) select#packages{
     background-color: var(--dark);
-    /* color: #fff; */
+    color: #fff;
   }
   #form #contact .input-group:nth-of-type(6) {
   font-size: 30px;

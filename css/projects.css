@@ -141,6 +141,10 @@
     color: var(--dark);
     list-style: none;
   }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid a{
+    text-decoration: none;
+    color: var(--dark);
+  }
   #pricing .container .pricing-wrapper .pricing-card ul li{
     margin: 15px;
     border-bottom: #2287d55e solid 1px;

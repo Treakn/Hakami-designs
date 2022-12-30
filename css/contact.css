@@ -57,6 +57,7 @@
     font-size: 1em;
     margin-bottom: 0.375em;
   }
+ 
   #form #contact .input-group input[type="text"],
   #form #contact .input-group input[type="email"],
   #form #contact .input-group input[type="tel"],
@@ -131,6 +132,23 @@
   body.dark-mode #form .form-submit button{
     background-color: var(--light);
   }
+  #form #contact .input-group:nth-of-type(5), #form #contact .input-group:nth-of-type(6) {
+    width: 100%;
+  }
+  #form #contact .input-group:nth-of-type(6) select#packages{
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: right;
+  }
+  body.dark-mode #form #contact .input-group:nth-of-type(6) select#packages{
+    background-color: var(--dark);
+    /* color: #fff; */
+  }
+  #form #contact .input-group:nth-of-type(6) {
+  font-size: 30px;
+  
+  }
 }
 /* Mobile Landscape */
 @media only screen and (min-width: 568px) {
@@ -177,13 +195,11 @@
     margin-bottom: 3.125em;
     position: relative;
   }
-  #form #contact .input-group:nth-of-type(5) {
-    width: 100%;
-  }
+  
   #form #contact .input-group:last-of-type {
     width: 100%;
   }
-  #form #contact .input-group:hover .hover-box {
+  #form #contact .input-group:hover:not(#form #contact .input-group:nth-of-type(6)) .hover-box{
     height: 4.1875em;
     border: 0.0625em solid var(--primary);
     pointer-events: none;

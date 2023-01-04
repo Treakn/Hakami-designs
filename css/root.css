@@ -304,11 +304,14 @@
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-color: #fff;
-    top: 6em;
+    top: 4em;
     padding-top: 0;
     height: 0;
     -webkit-transition: height 0.3s, padding-top 0.3s, top 0.3s;
     transition: height 0.3s, padding-top 0.3s, top 0.3s;
+  }
+  body.dark-mode #navigation #navbar-menu{
+    top: 6em;
   }
   #navigation #navbar-menu ul {
     padding: 0;

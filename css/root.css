@@ -216,7 +216,7 @@
   #navigation .logo .dark {
     display: block;
     height: 100%;
-    width: 115px;
+    width: 100%;
   }
   #navigation .hamburger-menu {
     position: absolute;
@@ -569,7 +569,7 @@
   body.dark-mode #navigation .logo .light {
     display: block;
     height: 100%;
-    width: 115px;
+    width: 100%;
   }
   body.dark-mode #navigation .logo .dark {
     display: none !important;

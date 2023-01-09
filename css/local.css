@@ -78,10 +78,11 @@
   #sidebyside .container .content .service-wrapper .service h3 {
     margin: 10px 0;
     font-family: 'bold';
-    font-size: 1.4em;
+    font-size: 1.2em;
+    white-space: nowrap;
   }
   #sidebyside .container .content .service-wrapper .service h3 img{
-    margin-left: 0.625em;
+    margin-left: 0.2em;
     margin-top: 0.22222222em;
   }
   #sidebyside .container .content .service-wrapper .service p{
@@ -172,6 +173,11 @@
   #sidebyside-reverse .content ul {
     padding-left: 1.25em;
     margin-bottom: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-content: flex-end;
+    align-items: flex-end;
   }
   #sidebyside-reverse .content ul li {
     list-style: none;
@@ -232,6 +238,69 @@
     order: 1;
   }
   
+ 
+}
+
+/*-- -------------------------- -->
+<---    sidebyside how          -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0em) {
+  .content{
+    text-align: right;
+  }
+  #how .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+  }
+  #how .container .content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+  #how .container .content ul li{
+    list-style: none;
+  }
+  #how .container .content h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 50px 0;
+  }
+  #how .container .content h3{
+  margin-bottom: 20px;
+  }
+  #how .container .content p{
+    font-size: 1em;
+  }
+}
+/* Inbetween */
+@media only screen and (min-width: 666px) {
+ 
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  #how .container{
+    max-width: 86.9375em;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #how .container .content{
+    width: 60%;
+    margin: 0;
+  }
+   ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #how .container .content ul li{
+    width: 400px;
+  }
   
 }
 /*-- -------------------------- -->

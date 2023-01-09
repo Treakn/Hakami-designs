@@ -334,13 +334,13 @@
   }
   #services .container .blob{
     position: absolute;
-    height: 33vh;
+    height: 57vw;
     z-index: -1;
-    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  #services .container .dark-blob{
-    display: none;
-  }
+ 
   #services .container .content{
     text-align: center;
     padding: 100px 0;
@@ -348,6 +348,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  #services .container .content h3{
+  padding: 20px 0;
+  font-size: 1.4em;
+  }
+  #services .container .content p{
+    margin-bottom: 30px;
   }
   .line{
     display: inline-block;
@@ -377,14 +384,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgba(255, 255, 255, 0.94);
     border-radius: 8px;
     padding: 30px;
+    height: 350px;
   }
   #services .container .content .what-item img{
-    width: 5em;
-    height: 15%;
+    width: 134px;
     margin: 1em 0;
   }
   

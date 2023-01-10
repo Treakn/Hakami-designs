@@ -111,6 +111,7 @@
     gap: 40px;
     box-shadow: 1px 5px 5px 1px;
   }
+ 
   #pricing .container .pricing-wrapper .pricing-card span{
     font-size: 16px;
     font-family: 'normal';
@@ -120,6 +121,9 @@
   }
   #pricing .container .pricing-wrapper .pricing-top h4{
     font-size: .6em;
+  }
+  #pricing .container .pricing-wrapper .pricing-top ul li{
+    text-align: center;
   }
   
   body.dark-mode #pricing {

@@ -106,15 +106,20 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-align: right;
     gap: 40px;
     box-shadow: 1px 5px 5px 1px;
-    width: 80vw;
+  }
+  #pricing .container .pricing-wrapper .pricing-card span{
+    font-size: 16px;
+    font-family: 'normal';
   }
   #pricing .container .pricing-wrapper .pricing-top{
     text-align: center;
+  }
+  #pricing .container .pricing-wrapper .pricing-top h4{
+    font-size: .6em;
   }
   
   body.dark-mode #pricing {
@@ -138,7 +143,7 @@
     font-size: 3em;
     color: var(--primary);
   }
-  #pricing .container .pricing-wrapper .pricing-card p, #pricing .container .pricing-wrapper .pricing-card ul li{
+  #pricing .container .pricing-wrapper .pricing-card p ,#pricing .container .pricing-wrapper .pricing-card ul li{
     font-size: 1.5em;
     margin: 10px 0;
     font-family: 'bold';
@@ -163,7 +168,7 @@
     background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
-    height: 95em;
+   
   }
   #pricing .container .pricing-wrapper .pricing-card:nth-child(1) .button-solid{
     background: hsla(240, 2%, 84%, 1);
@@ -221,32 +226,6 @@
    body.dark-mode #pricing .container .pricing-wrapper .pricing-card p,body.dark-mode #pricing .container .pricing-wrapper .pricing-card ul li{
     color: var(--light);
   }
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(3){
-    background-image: radial-gradient(circle at 100% 100%, transparent 4px, #2287d5 4px, #2287d5 6px, transparent 6px), linear-gradient(to right, #2287d5, #a6d1f2), radial-gradient(circle at 0% 100%, transparent 4px, #a6d1f2 4px, #a6d1f2 6px, transparent 6px), linear-gradient(to bottom, #a6d1f2, #2287d5), radial-gradient(circle at 0% 0%, transparent 4px, #2287d5 4px, #2287d5 6px, transparent 6px), linear-gradient(to left, #2287d5, #a6d1f2), radial-gradient(circle at 100% 0%, transparent 4px, #a6d1f2 4px, #a6d1f2 6px, transparent 6px), linear-gradient(to top, #a6d1f2, #2287d5);
-    background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
-    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
-    background-repeat: no-repeat;
-  }
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(3) .button-solid{
-    color: var(--dark);
-    background: hsla(206, 75%, 80%, 1);
-
-background: linear-gradient(45deg, hsla(206, 75%, 80%, 1) 0%, hsla(206, 72%, 48%, 1) 23%, hsla(206, 75%, 80%, 1) 100%);
-
-background: -moz-linear-gradient(45deg, hsla(206, 75%, 80%, 1) 0%, hsla(206, 72%, 48%, 1) 23%, hsla(206, 75%, 80%, 1) 100%);
-
-background: -webkit-linear-gradient(45deg, hsla(206, 75%, 80%, 1) 0%, hsla(206, 72%, 48%, 1) 23%, hsla(206, 75%, 80%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", endColorstr="#2287D5", GradientType=1 );
-  }
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(3) h2{
-    background: #2286d3;
-    background: repeating-radial-gradient(ellipse farthest-corner at center center, #2286d3 0%, #A6D1F2 50%, #A6D1F2 51%, #2286D3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 20px;
-    border-bottom: #000 solid 1px;
-  }
   
   #cta {
     content: '';
@@ -269,20 +248,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
 }
 /* Small Desktop */
 @media only screen and (min-width: 700px){
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
-    height: 52em;
-  }
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(2){
-   height: 71em;
-  }
+  
 }
 @media only screen and (min-width: 1024px){
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
-    height: 36em;
-  }
-  #pricing .container .pricing-wrapper .pricing-card:nth-child(2){
-    height: 47em;
-   }
+ 
 }
 
 @media only screen and (min-width: 700px) {
@@ -290,17 +259,17 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
     flex-direction: row;
   }
 #pricing .container .pricing-wrapper .pricing-card ul li {
-    font-size: .7em;
+    font-size: 1em;
 }
 #pricing .container .pricing-wrapper .pricing-card h2{
   font-size: 1.5em;
   color: var(--primary);
 }
 #pricing .container .pricing-wrapper .pricing-card .button-solid{
-  font-size: .7em;
+  font-size: 1em;
 }
 #pricing .container .pricing-wrapper .pricing-card{
-  width: 30vw;
+  width: 45vw;
 }
 }
 @media only screen and (min-width: 1024px){
@@ -329,7 +298,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
     font-size: .5em;
   }
   #pricing .container .pricing-wrapper .pricing-card ul li{
-    font-size: .57em;
+    font-size: 1em;
     max-width: 200px;
     margin: 15px;
     border-bottom: #2287d55e solid 1px;
@@ -338,7 +307,16 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#A6D1F2", en
   .color{
     color: var(--primaryShade);
   }
+  
 }
+@media only screen and (min-width: 1400px){
+  #pricing .container .pricing-wrapper .pricing-card {
+    width: 30vw;
+}
+#pricing .container .pricing-wrapper .pricing-card ul li {
+  font-size: .5em;
+}
+  }
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/

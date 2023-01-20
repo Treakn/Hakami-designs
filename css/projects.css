@@ -115,7 +115,14 @@
   #pricing .container .pricing-wrapper .pricing-card span{
     font-size: 16px;
     font-family: 'normal';
+    color: var(--dark);
   }
+
+  body.dark-mode #pricing .container .pricing-wrapper .pricing-card span{
+    color: #fff;
+  }
+  
+  
   #pricing .container .pricing-wrapper .pricing-top{
     text-align: center;
   }

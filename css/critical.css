@@ -334,7 +334,6 @@
   }
   #services .container .blob{
     position: absolute;
-    height: 57vw;
     z-index: -1;
     top: 40%;
     left: 50%;
@@ -407,12 +406,7 @@
     align-items: center;
     gap: 1rem;
   }
-  #services .container .blob{
-    position: absolute;
-    height: 100%;
-    z-index: -1;
-    
-  }
+  
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {

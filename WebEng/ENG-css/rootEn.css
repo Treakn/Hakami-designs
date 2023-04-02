@@ -15,7 +15,7 @@
     font-family: 'normal';
     font-style: normal;
     font-weight: 400;
-    src: local(''), url('/fonts/NotoSansArabicUI-SemiCondensedLight.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/NotoSansArabicUI-SemiCondensedLight.ttf') format('woff');
+    src: local(''), url('/fonts/Lato-Regular.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Lato-Regular.ttf') format('woff');
     font-display: swap; 
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
@@ -24,7 +24,7 @@
     font-family: 'normal2';
     font-style: normal;
     font-weight: 700;
-    src: local(''), url('/fonts/NotoSansArabicUI-SemiCondensedLight.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/NotoSansArabicUI-SemiCondensedLight.ttf') format('woff');
+    src: local(''), url('/fonts/Lato-Regular.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Lato-Regular.ttf') format('woff');
     font-display: swap; 
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
@@ -33,7 +33,7 @@
     font-family: 'bold';
     font-style: normal;
     font-weight: 900;
-    src: local(''), url('/fonts/NotoSansArabicUI-SemiCondensedBold.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/NotoSansArabicUI-SemiCondensedBold.ttf') format('woff');
+    src: local(''), url('/fonts/Lato-Bold.ttf') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Lato-Bold.ttf') format('woff');
     font-display: swap; 
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }

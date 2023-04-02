@@ -1,0 +1,429 @@
+/*-- -------------------------- -->
+<---         Portfolio          -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+ 
+  #pricing {
+    padding: 30px 0;
+    position: relative;
+    z-index: 5;
+    background-color: var(--light);
+  }
+  form{
+    display: flex;
+  }
+  #pricing .container {
+    width: 96%;
+    max-width: 82.625em;
+    padding: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1.875em;
+    font-size: min(1.3vw, 1em);
+  }
+
+  #pricing .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1.875em;
+  }
+  #pricing .container .row:nth-of-type(1) picture:nth-of-type(1) {
+    width: 26.25em;
+    height: 35.4375em;
+  }
+  #pricing .container .row:nth-of-type(1) picture:nth-of-type(2) {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+  #pricing .container .row:nth-of-type(1) picture:nth-of-type(3) {
+    width: 26.25em;
+    height: 32em;
+  }
+  #pricing .container .row:nth-of-type(2) picture:nth-of-type(1) {
+    width: 26.25em;
+    height: 30.75em;
+  }
+  #pricing .container .row:nth-of-type(2) picture:nth-of-type(2) {
+    width: 26.25em;
+    height: 32.3125em;
+  }
+  #pricing .container .row:nth-of-type(2) picture:nth-of-type(3) {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+  #pricing .container .row:nth-of-type(3) picture:nth-of-type(1) {
+    width: 26.25em;
+    height: 39.0625em;
+  }
+  #pricing .container .row:nth-of-type(3) picture:nth-of-type(2) {
+    width: 26.25em;
+    height: 28.25em;
+  }
+  #pricing .container .row:nth-of-type(3) picture:nth-of-type(3) {
+    width: 26.25em;
+    height: 39.3125em;
+  }
+  #pricing .container .row picture {
+    position: relative;
+    display: block;
+  }
+  #pricing .container .row picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.5em;
+  }
+  #pricing .container .pricing-wrapper{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 1.8em;
+  }
+  #pricing .container .pricing-wrapper .pricing-card{
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 40px;
+    box-shadow: 1px 5px 5px 1px;
+  }
+ 
+  #pricing .container .pricing-wrapper .pricing-card span{
+    font-size: 16px;
+    font-family: 'normal';
+    color: var(--dark);
+  }
+
+  body.dark-mode #pricing .container .pricing-wrapper .pricing-card span{
+    color: #fff;
+  }
+  
+  
+  #pricing .container .pricing-wrapper .pricing-top{
+    text-align: center;
+  }
+  #pricing .container .pricing-wrapper .pricing-top h4{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  #pricing .container .pricing-wrapper .pricing-top ul li{
+    text-align: center;
+  }
+  
+  body.dark-mode #pricing {
+    background-color: var(--dark);
+  }
+  body.dark-mode #pricing .container .pricing-wrapper .pricing-card{
+    background-color: var(--medium);
+  }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid{
+    background-color: var(--light);
+    font-size: 1.5em;
+    border: none;
+    font-family: 'bold';
+  }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid:hover a{
+    color: var(--light);
+    transition: all .4s;
+  }
+ 
+  #pricing .container .pricing-wrapper .pricing-card h2{
+    font-size: 3em;
+    color: var(--primary);
+  }
+  #pricing .container .pricing-wrapper .pricing-card p ,#pricing .container .pricing-wrapper .pricing-card ul li{
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: 'bold';
+    font-weight: 900;
+    color: var(--dark);
+    list-style: none;
+  }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid a{
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--dark);
+  }
+  #pricing .container .pricing-wrapper .pricing-card ul li{
+    margin: 15px;
+    border-bottom: #2287d55e solid 1px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1){
+    background-image: radial-gradient(circle at 100% 100%, transparent 4px, #d5d5d7 4px, #d5d5d7 6px, transparent 6px), linear-gradient(to right, #d5d5d7, #eaeaeb), radial-gradient(circle at 0% 100%, transparent 4px, #eaeaeb 4px, #eaeaeb 6px, transparent 6px), linear-gradient(to bottom, #eaeaeb, #d5d5d7), radial-gradient(circle at 0% 0%, transparent 4px, #d5d5d7 4px, #d5d5d7 6px, transparent 6px), linear-gradient(to left, #d5d5d7, #eaeaeb), radial-gradient(circle at 100% 0%, transparent 4px, #eaeaeb 4px, #eaeaeb 6px, transparent 6px), linear-gradient(to top, #eaeaeb, #d5d5d7);
+    background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+   
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1) .button-solid{
+    background: hsla(240, 2%, 84%, 1);
+
+    background: linear-gradient(45deg, hsla(240, 2%, 84%, 1) 0%, hsla(240, 2%, 92%, 1) 29%, hsla(240, 2%, 84%, 1) 100%);
+
+    background: -moz-linear-gradient(45deg, hsla(240, 2%, 84%, 1) 0%, hsla(240, 2%, 92%, 1) 29%, hsla(240, 2%, 84%, 1) 100%);
+
+    background: -webkit-linear-gradient(45deg, hsla(240, 2%, 84%, 1) 0%, hsla(240, 2%, 92%, 1) 29%, hsla(240, 2%, 84%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D5D5D7", endColorstr="#EAEAEB", GradientType=1 );
+  }
+    #pricing .container .pricing-wrapper .pricing-card:nth-child(1) p, #pricing .container .pricing-wrapper .pricing-card:nth-child(1) .button-solid , #pricing .container .pricing-wrapper .pricing-card:nth-child(1) ul li{
+    color: #000;
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(1) h2{
+    background: #000000;
+    background: linear-gradient(to left, #000000 0%, #C0C0C0 85%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    padding-bottom: 20px;
+    border-bottom: #000 solid 1px;
+  }
+
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2) , #pricing .container .pricing-wrapper .pricing-card:nth-child(2) .button-solid{
+    background-image: radial-gradient(circle at 100% 100%, transparent 4px, #daa520 4px, #daa520 6px, transparent 6px), linear-gradient(to right, #daa520, #fafad2), radial-gradient(circle at 0% 100%, transparent 4px, #fafad2 4px, #fafad2 6px, transparent 6px), linear-gradient(to bottom, #fafad2, #daa520), radial-gradient(circle at 0% 0%, transparent 4px, #daa520 4px, #daa520 6px, transparent 6px), linear-gradient(to left, #daa520, #fafad2), radial-gradient(circle at 100% 0%, transparent 4px, #fafad2 4px, #fafad2 6px, transparent 6px), linear-gradient(to top, #fafad2, #daa520);
+    background-size: 6px 6px, calc(100% - 12px) 2px, 6px 6px, 2px calc(100% - 12px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    color: var(--dark);
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2) h2{
+    background: #FAFAD1;
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #FAFAD1 0%, #D9A520 50%, #D9A520 51%, #FAFAD1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+    border-bottom: #000 solid 1px;
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2) .button-solid{
+    background: hsla(43, 74%, 49%, 1);
+
+   background: linear-gradient(45deg, hsla(43, 74%, 49%, 1) 0%, hsla(60, 80%, 90%, 1) 23%, hsla(43, 74%, 49%, 1) 100%);
+
+   background: -moz-linear-gradient(45deg, hsla(43, 74%, 49%, 1) 0%, hsla(60, 80%, 90%, 1) 23%, hsla(43, 74%, 49%, 1) 100%);
+
+   background: -webkit-linear-gradient(45deg, hsla(43, 74%, 49%, 1) 0%, hsla(60, 80%, 90%, 1) 23%, hsla(43, 74%, 49%, 1) 100%);
+
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DAA520", endColorstr="#FAFAD2", GradientType=1 );
+  }
+  #pricing .container .pricing-wrapper .pricing-card:nth-child(2) ul li , #pricing .container .pricing-wrapper .pricing-card:nth-child(2) p{
+    color: var(--dark);
+  }
+ 
+   body.dark-mode #pricing .container .pricing-wrapper .pricing-card p,body.dark-mode #pricing .container .pricing-wrapper .pricing-card ul li{
+    color: var(--light);
+  }
+  
+  
+  .explain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .explain p{
+    margin: 10px 0;
+  }
+  .explain .button-solid a{
+  text-decoration: none;
+  color: #fff;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 700px){
+  
+}
+@media only screen and (min-width: 1024px){
+ 
+}
+
+@media only screen and (min-width: 700px) {
+#pricing .container .pricing-wrapper{
+    flex-direction: row;
+  }
+#pricing .container .pricing-wrapper .pricing-card ul li {
+    font-size: 1em;
+}
+#pricing .container .pricing-wrapper .pricing-card h2{
+  font-size: 1.5em;
+  color: var(--primary);
+}
+#pricing .container .pricing-wrapper .pricing-card .button-solid{
+  font-size: 1em;
+}
+#pricing .container .pricing-wrapper .pricing-card{
+  width: 45vw;
+}
+
+
+}
+@media only screen and (min-width: 1024px){
+ 
+  }
+  @media only screen and (min-width: 1400px){
+   
+    }
+@media only screen and (min-width: 64em) {
+ 
+  #pricing .container .pricing-wrapper{
+    flex-direction: row;
+  }
+  #pricing .container .pricing-wrapper .pricing-card h2, #pricing .container .pricing-wrapper .pricing-card p{
+    font-size: 1em;
+  }
+  #pricing .container .pricing-wrapper .pricing-card .pricing-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #pricing .container .pricing-wrapper .pricing-card .button-solid{
+    font-size: .5em;
+  }
+  #pricing .container .pricing-wrapper .pricing-card ul li{
+    font-size: 1em;
+    max-width: 200px;
+    margin: 15px;
+    border-bottom: #2287d55e solid 1px;
+    padding-bottom: 10px;
+  }
+  .color{
+    color: var(--primaryShade);
+  }
+  
+}
+@media only screen and (min-width: 1400px){
+  #pricing .container .pricing-wrapper .pricing-card {
+    width: 30vw;
+}
+#pricing .container .pricing-wrapper .pricing-card ul li {
+  font-size: .5em;
+}
+
+  }
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+  #cta .container .button-solid {
+    background-color: var(--light);
+}
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+  
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}

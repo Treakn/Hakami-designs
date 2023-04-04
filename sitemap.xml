@@ -9,28 +9,48 @@
 
 <url>
   <loc>https://hakami-designs.com/</loc>
-  <lastmod>2023-01-04T17:46:38+00:00</lastmod>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://hakami-designs.com/index.html</loc>
-  <lastmod>2023-01-04T17:46:38+00:00</lastmod>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hakami-designs.com/about.html</loc>
-  <lastmod>2023-01-04T17:46:38+00:00</lastmod>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hakami-designs.com/pricing</loc>
-  <lastmod>2023-01-04T17:46:38+00:00</lastmod>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://hakami-designs.com/contact.html</loc>
-  <lastmod>2023-01-04T17:46:38+00:00</lastmod>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hakami-designs.com/webeng/indexen</loc>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hakami-designs.com/webeng/abouten</loc>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hakami-designs.com/webeng/pricingen</loc>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hakami-designs.com/webeng/contacten</loc>
+  <lastmod>2023-04-04T16:07:23+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
